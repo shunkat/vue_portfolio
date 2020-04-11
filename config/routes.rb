@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :contents
   get 'hello/index'
 
   devise_for :users, controllers: {
