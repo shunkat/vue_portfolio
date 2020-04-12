@@ -51,3 +51,17 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # managing User
 gem 'devise'
+
+#RSpecとFactory Bot　導入
+group :test do
+  # 中略
+  gem 'rspec-rails', '~> 3.8'
+  gem 'factory_bot_rails', '~> 5.1.0'
+end
+
+#エラーが出たためdefaultのENVであるdevelopmentにrspec導入
+group :development do
+  # 中略
+  gem 'rspec-rails', '~> 3.8'
+  gem 'factory_bot_rails', '~> 5.1.0'
+end
